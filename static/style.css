@@ -3,7 +3,7 @@
     padding: 5px;
     /* border: 1px solid red;  */
     font-family: "Roboto";
-    background-color: #B5D0DA; /* Light blue */
+    
     
 }
 
@@ -35,18 +35,26 @@ img {
 
 /* Styling for the navigation bar */    
 a {
-    background-color:white; /* Soft reddish-brown */
     text-decoration: none; 
     margin-right: 15px;
 }
 
 th { 
     padding: 12px; 
-    background-color: #A27070; 
-    color: white; 
+    color: rgb(7, 6, 6); 
+    background-color: #A27070; /* Soft reddish-brown */
     width: fit-content; 
 }
 
 tr:nth-child(even) { 
-    background-color: #f2f2f2;  /* Light gray for even rows */
+    background-color: #aeadad;  /* Light gray for even rows */
 }
+
+
+/* Select all elements inside the form using a combination selector with a universal selector */
+form * {
+    display: block;  /* Change inline elements to block */
+    margin: auto;    /* Center elements */
+    text-align: center; /* Center text */
+}
+
