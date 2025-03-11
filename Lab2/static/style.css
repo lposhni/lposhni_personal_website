@@ -1,0 +1,52 @@
+* { 
+    margin: 5px;
+    padding: 5px;
+    /* border: 1px solid red;  */
+    font-family: "Roboto";
+    background-color: #B5D0DA; /* Light blue */
+    
+}
+
+
+.roboto-unique {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/* Header text color */
+.header { 
+    color: #A27070; /* Soft reddish-brown */
+}
+
+
+
+/* Styling for the webname */
+#webname {
+    background-color: #CBC2DC; /* Light purple background */
+    padding: 10px;
+}
+
+img { 
+    width: 10%
+}
+
+/* Styling for the navigation bar */    
+a {
+    background-color:white; /* Soft reddish-brown */
+    text-decoration: none; 
+    margin-right: 15px;
+}
+
+th { 
+    padding: 12px; 
+    background-color: #A27070; 
+    color: white; 
+    width: fit-content; 
+}
+
+tr:nth-child(even) { 
+    background-color: #f2f2f2;  /* Light gray for even rows */
+}
