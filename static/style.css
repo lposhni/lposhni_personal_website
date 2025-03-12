@@ -1,31 +1,22 @@
 * { 
     margin: 5px;
     padding: 5px;
-    /* border: 1px solid red;  */
-    font-family: "Roboto";
-    
-    
-}
-
-
-.roboto-unique {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
-    font-variation-settings: "wdth" 100;
-}
+    font-variation-settings: "wght" 100;
+} 
+    
 
-/* Header text color */
 .header { 
-    color: #A27070; /* Soft reddish-brown */
+    color: #A27070; 
 }
 
 
-
-/* Styling for the webname */
 #webname {
-    background-color: #CBC2DC; /* Light purple background */
+    background-color: #CBC2DC; 
+    color: #A27070;
     padding: 10px;
 }
 
@@ -33,28 +24,27 @@ img {
     width: 10%
 }
 
-/* Styling for the navigation bar */    
 a {
     text-decoration: none; 
     margin-right: 15px;
+    color: #CBC2DC;
 }
 
 th { 
     padding: 12px; 
     color: rgb(7, 6, 6); 
-    background-color: #A27070; /* Soft reddish-brown */
+    background-color: #A27070; 
     width: fit-content; 
 }
 
 tr:nth-child(even) { 
-    background-color: #aeadad;  /* Light gray for even rows */
+    background-color: #aeadad; 
 }
 
 
-/* Select all elements inside the form using a combination selector with a universal selector */
 form * {
-    display: block;  /* Change inline elements to block */
-    margin: auto;    /* Center elements */
-    text-align: center; /* Center text */
+    display: block; 
+    margin: auto;  
+    text-align: center; 
 }
 
