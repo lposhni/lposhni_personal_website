@@ -1,0 +1,50 @@
+* { 
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wght" 100;
+} 
+    
+
+.header { 
+    color: #A27070; 
+}
+
+
+#webname {
+    background-color: #CBC2DC; 
+    color: #A27070;
+    padding: 10px;
+}
+
+img { 
+    width: 10%
+}
+
+a {
+    text-decoration: none; 
+    margin-right: 15px;
+    color: #CBC2DC;
+}
+
+th { 
+    padding: 12px; 
+    color: rgb(7, 6, 6); 
+    background-color: #A27070; 
+    width: fit-content; 
+}
+
+tr:nth-child(even) { 
+    background-color: #aeadad; 
+}
+
+
+form * {
+    display: block; 
+    margin: auto;  
+    text-align: center; 
+}
+
