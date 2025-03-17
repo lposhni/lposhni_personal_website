@@ -73,16 +73,18 @@ function greetingFunction() {
     let message = ""; 
 
    
+    // check the time and set the message
     if (h < 12) {
         message = "Good morning";
     } else if (h >= 12 && h < 18) {  
         message = "Good afternoon";
     } else if (h >= 18 && h < 20) {
         message = "Good evening";
-    } else if ((h >= 20 && h < 24) || (h >= 0 && h < 5)) {
+    } else if ((h >= 20 && h < 24) || (h > 0 && h < 5)) {
         message = "Good night";
     }
 
+    // print the message to h2 tag with id "greeting"
     let E = document.getElementById("greeting");
     if (E) {
         E.innerHTML = `${message}, My name is Lena Poshni`;
@@ -93,6 +95,7 @@ function greetingFunction() {
 // when home page loads.. 
 window.onload = function() {
     greetingFunction();
+    // if page = intdex.html 
     if (window.location.href.includes("index.html")) {
         greetingFunction();
     }
