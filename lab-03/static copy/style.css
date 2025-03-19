@@ -48,34 +48,3 @@ form * {
     text-align: center; 
 }
 
-
-#funList {
-    display: none;
-    background-color: #CBC2DC;
-    width: 200px;
-    border: black; 
-}
-
-#showButton {
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #A27070;
-}
-
-#showButton:hover {
-    background-color: #0056b3;
-}
-
-#fullBio {
-    display: none;
-}
-
-#readLess {
-    display: none;
-}
-
-.error {
-    color: red;
-    font-size: 0.9em;
-    margin-left: 10px;
-}

@@ -48,8 +48,8 @@ function findTheBanana(array) {
     }
 }
 
-findTheBanana(L1); 
-findTheBanana(L2);
+// findTheBanana(L1); 
+// findTheBanana(L2);
 
 // second way to find the banana in the array
 function findTheBanana2(array, arrayName) {
@@ -61,9 +61,15 @@ function findTheBanana2(array, arrayName) {
 }
 
 
-findTheBanana2(L1, "first array");
-findTheBanana2(L2, "second array");
+// findTheBanana2(L1, "first array");
+// findTheBanana2(L2, "second array");
 
+function addYear() { 
+    let d = new Date(); 
+    let y = d.getFullYear(); 
+    let E = document.getElementById("copyYear");
+    E.innerHTML+=y;
+}
 
 
 //  greeting message 
@@ -92,12 +98,74 @@ function greetingFunction() {
     console.log(message);
 }
 
-// when home page loads.. 
-window.onload = function() {
-    greetingFunction();
-    // if page = intdex.html 
-    if (window.location.href.includes("index.html")) {
-        greetingFunction();
+
+// show  list of facts 
+function showList() { 
+    document.getElementById("funList").style.display = "block";
+    document.getElementById("showButton").style.display = "none";
     }
-} 
+
+
+// read less and more feature 
+
+$("#readLess").click(function() {
+    // show full bio and hide short bio
+    $("#fullBio").hide();
+    $("#shortBio, #readMore").show(); 
+    $("#readLess").hide(); 
+});
+$("#readMore").click(function() {
+    // show short bio and hide full bio
+    $("#shortBio").hide();
+    $("#fullBio, #readLess").show();
+    $("#readMore").hide();
+});
+
+// fixing form: 
+function validateForm() {
+    // if it's currently valid 
+    let validR = true;
+    // getting input to check validity and then displaying error message if NOT valid 
+    // otherwise, error message is j empty 
+    if (!document.getElementById("name").checkValidity()) {
+        document.getElementById("nameError").innerHTML = document.getElementById("name").validationMessage;
+        validR = false;
+    } else {
+        document.getElementById("nameError").innerHTML = "";
+    }
+    if (!document.getElementById("email").checkValidity()) {
+        document.getElementById("emailError").innerHTML = document.getElementById("email").validationMessage;
+        validR = false;
+    } else {
+        document.getElementById("emailError").innerHTML = "";
+    }
+    if (!document.getElementById("comment").checkValidity()) {
+        document.getElementById("messageError").innerHTML = document.getElementById("comment").validationMessage;
+        validR = false;
+    } else {
+        document.getElementById("messageError").innerHTML = "";
+    }
+    if (validR) {
+        document.getElementById("contactForm").submit(); // submission 
+    }
+    else { 
+        // error for overall form 
+        document.getElementById("error").innerHtml = "Error when submitting"; 
+    }
+}
+
+
+
+
+
+// when home page loads only run greeting funct 
+    // if page = intdex.html 
+    if (window.location.href.includes("index.html") || window.location.href === window.location.origin + "/") {
+        greetingFunction();
+        console.log("Here")
+    }
+    console.log(window.location.href)
+    
+
+
 
