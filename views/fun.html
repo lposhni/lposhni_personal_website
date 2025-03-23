@@ -26,18 +26,40 @@
         </nav>
     </header>
 
-    <div class = "main"> 
-        <h2> Things I love to do for fun </h2>
+    <div class="mainLayout">
+        <div id="item1"> 
+            <h2> Things I love to do for fun </h2>
+            <ul id="funList">
+                <li><strong>Music:</strong> I love listening to music but also playing music. I can play both the violin and the piano.</li>
+                <li><strong>Cooking:</strong> I love to bake and cook in my free time. My favorite (and easiest) dish I can make is chicken alfredo!</li>
+                <li><strong>Traveling:</strong> I love to travel! My favorite places I've been include St. Moritz (Switzerland), Lake Como (Italy), and Milan (Italy).</li>
+                <li><strong>Spending time with family and friends:</strong> I love sharing time with my loved ones and making great memories together.</li>
+                <li><strong>Photography:</strong> I love taking pictures with my camera!</li>
+            </ul>
+        </div>
 
-        <button id="showButton" onclick="showList()">Click to see...</button>
+        <div id="item2"> 
+            <img src="../static/Image.jpg" class="funIMG" alt="Fun Image">
+        </div>
 
-        <ul id="funList">
-            <li><strong>Music:</strong> I love listening to music but also playing music. I can play both the violin and the piano.</li>
-            <li><strong>Cooking:</strong> I love to bake and cook in my free time. My favorite (and easiest) dish I can make is chicken alfredo!</li>
-            <li><strong>Traveling:</strong> I love to travel! My favorite places I've been include St. Moritz (Switzerland), Lake Como (Italy), and Milan (Italy).</li>
-            <li><strong>Spending time with family and friends:</strong> I love sharing time with my loved ones and making great memories together.</li>
-            <li><strong>Photography:</strong> I love taking pictures with my camera!</li>
-        </ul>
+        <div id="item3"> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hAdHQCNtGUk" title="YouTube video player" frameborder="0"> </iframe>
+        </div>
+        <div id="item4"> 
+            <div class = "container"> 
+                <h2>Need Some Advice?</h2>
+                <p id="adviceText">Click the button to get a random piece of advice!</p>
+                <button onclick="getAdvice()">Get Advice</button>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+        /* <button id="showButton" onclick="showList()">Click to see...</button> */
+
+        
 
 
     </div>

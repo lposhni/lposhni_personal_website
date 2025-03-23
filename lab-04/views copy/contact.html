@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <script defer src="../static/script.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Lena Poshni">
+        <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+        <meta name="description" content="Lena Poshni professional website">
+        <link rel="stylesheet" href="../static/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title> Lena Poshni</title>
+        
+    </head>
+<body onload= " addYear()">
+     <header>
+        <h1 id="webname"> Lena Poshni </h1>
+        <nav> 
+            <a href="../index.html"> Home </a>
+            <a href="cv.html"> Curriculum Vitae</a> 
+            <a href="contact.html">Contact me!</a>
+            <a href="fun.html">About me</a>
+        </nav>
+    </header>
+
+    <div class = "main"> 
+        <h2> Contact me </h2>
+        <form id="contactForm" action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required ><br><br>
+        
+            <span id="nameError" class="error"></span><br><br>
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required ><br><br>
+
+            <span id="emailError" class="error"></span><br><br>
+
+
+            <label for="comment">Comment:</label><br>
+            <textarea id="comment" name="comment" required ></textarea><br><br>
+            
+            <span id="messageError" class="error"></span><br><br>
+
+
+            <input onclick = "validateForm()" type="submit" value="Submit">
+        </form> 
+        <p id = "error">  </p>
+
+        <h3>Contact Information</h3>
+        <table border="1">
+            <tr>
+                <th>Contact Method</th>
+                <th>Information</th>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>lenaposhni@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>(240)-328-4068</td>
+            </tr>
+            <tr>
+                <td>LinkedIn</td>
+                <td><a href="https://www.linkedin.com/in/lenaposhni18" target="_blank">LinkedIn Page</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <p id="copyYear">  designed 🎨 and coded 👩‍💻 by Lena Poshni &copy; </p>
+    </footer>
+
+</body>
+
+</html>

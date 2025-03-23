@@ -100,10 +100,10 @@ function greetingFunction() {
 
 
 // show  list of facts 
-// function showList() { 
-//     document.getElementById("funList").style.display = "block";
-//     document.getElementById("showButton").style.display = "none";
-//     }
+function showList() { 
+    document.getElementById("funList").style.display = "block";
+    document.getElementById("showButton").style.display = "none";
+    }
 
 
 // read less and more feature 
@@ -168,16 +168,4 @@ function validateForm() {
     
 
 
-
-// get advice 
-function getAdvice() {
-    fetch("https://api.adviceslip.com/advice")
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById("adviceText").innerText = data.slip.advice;
-        })
-        .catch(error => {
-            console.error("Error: ", error);
-        });
-}
 
