@@ -100,10 +100,10 @@ function greetingFunction() {
 
 
 // show  list of facts 
-// function showList() { 
-//     document.getElementById("funList").style.display = "block";
-//     document.getElementById("showButton").style.display = "none";
-//     }
+function showList() { 
+    document.getElementById("funList").style.display = "block";
+    document.getElementById("showButton").style.display = "none";
+    }
 
 
 // read less and more feature 
@@ -180,4 +180,24 @@ function getAdvice() {
             console.error("Error: ", error);
         });
 }
+
+let map;
+
+window.initMap = async function () {
+    const position = { lat: 40.4406, lng: -79.9959 };
+    const { Map } = await google.maps.importLibrary("maps");
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+  
+    const map = new Map(document.getElementById("map"), {
+      center: position,
+      zoom: 12,
+    });
+  
+    new AdvancedMarkerElement({
+      map,
+      position: position,
+      title: "Pittsburgh",
+    });
+  };
+
 
